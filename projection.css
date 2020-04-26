@@ -1,0 +1,1003 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    @import url(font-awesome.min.css);
+    overflow-x: hidden;
+
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+.page1 {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.page1:before {
+    content: '';
+    background: rgba(75, 75, 93, 0.85);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    left: 0;
+}
+
+header {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    position: relative;
+    border-bottom: 0.1vw solid white;
+    z-index: 10001;
+    margin: 10px 80px 0px 80px;
+
+
+}
+
+.name {
+
+    width: 72vw;
+
+}
+
+#proj {
+    font-weight: bold;
+}
+
+
+.projection,
+li {
+
+    font-size: 1.3vw;
+
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+
+}
+
+li:hover {
+    color: #6CC091;
+    cursor: pointer;
+}
+
+li:active {
+    color: #6CC091;
+}
+
+
+
+.content {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'welcome welcome welcome'
+        'box1 box2 box3';
+    z-index: 10001;
+    position: relative;
+}
+
+.welcome {
+
+    grid-area: welcome;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4vw;
+    margin-bottom: 0;
+    color: white;
+}
+
+.box1,
+.box2,
+.box3 {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 35vh;
+
+}
+
+.box1 {
+
+    grid-area: box1;
+    border-right: 0.2vw solid rgba(255, 255, 255, 0.55);
+
+
+}
+
+.car,
+.bug,
+.camera {
+    color: #6CC091;
+    font-size: 3.8vw;
+}
+
+
+
+h3 {
+    font-size: 1.7vw;
+    color: white;
+    margin-bottom: 0;
+}
+
+#random {
+    font-size: 1.7vw;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.box2 {
+
+    grid-area: box2;
+    border-right: 0.2vw solid rgba(255, 255, 255, 0.55);
+    ;
+
+}
+
+.box3 {
+
+    grid-area: box3;
+}
+
+.start-button-div {
+    display: flex;
+    height: 11vh;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10001;
+    position: relative;
+}
+
+.btn {
+    padding: 1vw;
+    font-size: 0.9vw;
+    outline: none;
+    background: transparent;
+    border: 0.2vw solid #6CC091;
+    border-radius: 1.6vw;
+    width: 14vw;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+
+}
+
+.btn:hover,
+.learn-more:hover {
+    background-color: #6CC09121;
+
+}
+
+a {
+    color: #6CC091;
+    text-decoration: none;
+}
+
+.page2 {
+    background-color: #fff;
+    height: 80vh;
+    width: 100vw;
+}
+
+.learn-more-div {
+    display: grid;
+
+    height: 80vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+
+}
+
+.iphone-div,
+.camera-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+
+}
+
+.iphone,
+.cameras {
+    border-radius: 50%;
+    width: 13vw;
+
+}
+
+#iphone-div-text {
+    color: #555;
+    font-size: 1.8vw;
+    width: 16vw;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.iphone-div-text2 {
+    font-size: 1.3vw;
+    width: 36vw;
+    color: #9a9a9a;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 1vw;
+}
+
+
+.camera-div-text {
+    font-size: 1.8vw;
+    color: #555;
+    width: 17vw;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.camera-div-text2 {
+    font-size: 1.4vw;
+    width: 36vw;
+    color: #9a9a9a;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 1vw;
+}
+
+.learn-more {
+    padding: 1vw;
+    font-size: 0.9vw;
+    color: #6CC091;
+    outline: none;
+    background: transparent;
+    border: 0.2vw solid #6CC091;
+    border-radius: 1.6vw;
+    width: 12vw;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+}
+
+
+.page3 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #6CC091;
+
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'get get get get'
+        'name name email email'
+        'message message message message';
+    margin-bottom: 1vw;
+}
+
+.get-in-touch-div {
+    grid-area: get;
+    display: flex;
+    height: 15vh;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.get {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.user-info-div {
+    grid-area: name;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+input {
+    height: 3.4vw;
+    background: #6cc091;
+    border-radius: 10px;
+    border: none;
+    border: solid 2px #8dcca9;
+    color: #fff;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 35vw;
+    font-family: monospace;
+
+}
+
+input:focus {
+    border: solid 3px #4BAE77;
+}
+
+textarea {
+    text-decoration: none;
+    outline: none;
+    padding: 1vw;
+    color: white;
+    background: #6cc091;
+    border: solid 2px #8dcca9;
+    border-radius: 10px;
+    resize: none;
+
+}
+
+textarea:focus {
+    border: solid 3px #4BAE77;
+}
+
+.email-div {
+    grid-area: email;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.message-div {
+    grid-area: message;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer {
+    height: 20vh;
+    background-color: #6CC091;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn2 {
+    padding: 1vw;
+    font-size: 0.9vw;
+    color: white;
+    outline: none;
+    background: #6CC091;
+    border: 0.2vw solid white;
+    border-radius: 1.6vw;
+    width: 14vw;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+}
+
+.btn2:hover {
+    background-color: #ffffff21;
+}
+
+
+.aurthor {
+    font-size: 1.5vw;
+
+    color: rgba(255, 255, 255, 0.6)
+}
+
+
+
+
+
+@media only screen and (max-width:768px) {
+
+
+
+
+    .projection,
+    li {
+
+        font-size: 1.7vw;
+
+    }
+
+    li:hover {
+        color: #6CC091;
+        cursor: pointer;
+    }
+
+    .list {
+
+        width: 26vw;
+
+    }
+
+    h1 {
+        font-size: 4.6vw;
+
+
+    }
+
+    .car,
+    .bug,
+    .camera {
+        font-size: 4.7vw;
+    }
+
+
+
+    h3,
+    #random {
+        font-size: 2.2vw;
+
+    }
+
+    .btn {
+        padding: 1.3vw;
+        font-size: 1.5vw;
+        border: 0.3vw solid #6CC091;
+        border-radius: 1.7vw;
+        width: 22vw;
+
+    }
+
+    .page2,
+    .learn-more-div {
+        height: 73vh;
+    }
+
+    .iphone,
+    .cameras {
+        border-radius: 50%;
+        width: 16vw;
+
+    }
+
+    #iphone-div-text {
+        font-size: 2.1vw;
+        width: 18vw;
+
+    }
+
+    .iphone-div-text2 {
+        font-size: 1.7vw;
+        width: 45vw;
+        line-height: 1.8;
+    }
+
+
+    .camera-div-text {
+        font-size: 2.1vw;
+        width: 18vw;
+        line-height: 1.8;
+    }
+
+    .camera-div-text2 {
+        font-size: 1.7vw;
+        width: 45vw;
+        line-height: 1.8;
+
+    }
+
+    .learn-more {
+        padding: 1.3vw;
+        font-size: 1.5vw;
+        border: 0.3vw solid #6CC091;
+        width: 16vw;
+
+    }
+
+    .get {
+        font-size: 3.3vw;
+
+    }
+
+    input {
+        height: 5vw;
+        color: #fff;
+        border-radius: 1.3vw;
+        border: solid 2px #8dcca9;
+        font-size: 2vw;
+        width: 40vw;
+    }
+
+    textarea {
+        color: #fff;
+        height: 25vw;
+        width: 90vw;
+        padding: 1vw;
+        font-size: 2vw;
+        border: solid 2px #8dcca9;
+        border-radius: 1.3vw;
+
+
+    }
+
+    input:focus {
+        border: solid 2px #4BAE77;
+    }
+
+    textarea:focus {
+        border: solid 2px #4BAE77;
+    }
+
+    .btn2 {
+        padding: 1.3vw;
+        font-size: 1.6vw;
+        border: 0.3vw solid white;
+        border-radius: 1.7vw;
+        width: 22vw;
+        letter-spacing: 3px;
+
+
+    }
+
+
+
+    .aurthor {
+        font-size: 2.2vw;
+    }
+
+}
+
+@media only screen and (max-width:468px) {
+
+    header {
+
+        margin: 20px 30px 20px 30px;
+        height: 9vh;
+
+
+    }
+
+    li:hover {
+        color: #6CC091;
+        cursor: pointer;
+    }
+
+    .projection {
+
+        font-size: 3.2vw;
+
+    }
+
+    li {
+        font-size: 3.3vw;
+    }
+
+    .list {
+
+        width: 62vw;
+
+    }
+
+    .content {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'welcome'
+            'box1'
+            'box2'
+            'box3';
+        justify-content: center;
+        align-items: center;
+        z-index: 10001;
+        position: relative;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        height: 17vh;
+        border: none;
+    }
+
+    h1 {
+        font-size: 6.5vw;
+        margin-bottom: 0;
+    }
+
+    .car,
+    .bug,
+    .camera {
+        color: #6CC091;
+        font-size: 7.5vw;
+    }
+
+
+
+    h3 {
+        font-size: 5.5vw;
+        color: white;
+        margin-bottom: 0;
+    }
+
+    #random {
+        font-size: 4.5vw;
+        color: rgba(255, 255, 255, 0.55);
+    }
+
+    .start-button-div {
+        align-items: center;
+
+    }
+
+    .btn {
+        padding: 2.5vw;
+        font-size: 3.7vw;
+
+        border: 0.7vw solid #6CC091;
+        border-radius: 5vw;
+        width: 90vw;
+
+
+
+    }
+
+    .page2 {
+
+        height: 113vh;
+
+    }
+
+    .learn-more-div {
+        display: grid;
+
+        height: 113vh;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        grid-auto-rows: auto-fit;
+        position: relative;
+        top: -5vw;
+
+
+    }
+
+    .iphone-div,
+    .camera-div {
+
+
+        justify-content: space-around;
+        align-items: center;
+        height: 55vh;
+
+    }
+
+    .iphone,
+    .cameras {
+        border-radius: 50%;
+        width: 40vw;
+
+    }
+
+    #iphone-div-text {
+
+        font-size: 4vw;
+        width: 62vw;
+
+    }
+
+    .iphone-div-text2 {
+        font-size: 3.5vw;
+        width: 86vw;
+
+    }
+
+
+    .camera-div-text {
+        font-size: 4vw;
+        ;
+        width: 62vw;
+
+    }
+
+    .camera-div-text2 {
+        font-size: 3.5vw;
+        width: 86vw;
+
+    }
+
+    .learn-more {
+        padding: 1.7vw;
+        font-size: 3.7vw;
+
+        border: 0.8vw solid #6CC091;
+        border-radius: 4vw;
+        width: 80vw;
+
+
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'get get get get'
+            'name name name name'
+            'email email email email'
+            'message message message message';
+        margin-bottom: 1vw;
+
+
+    }
+
+
+    .get-in-touch-div {
+        height: 10vh;
+        align-items: flex-end;
+        justify-content: center;
+
+    }
+
+    .get {
+        font-size: 6vw;
+
+    }
+
+    .user-info-div {
+        height: 18vh;
+
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    input {
+        height: 10vw;
+
+        border: solid 3px #8dcca9;
+
+        width: 80vw;
+        font-size: 4vw;
+    }
+
+    input:focus {
+        border: solid 3px #4BAE77;
+    }
+
+    textarea {
+
+        padding: 2vw;
+        color: #fff;
+
+        width: 80vw;
+        height: 20vh;
+        font-size: 4vw;
+
+    }
+
+    textarea:focus {
+        border: solid 3px #4BAE77;
+    }
+
+    .email-div {
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 10vw;
+
+    }
+
+    .message-div {
+
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vw;
+
+    }
+
+
+
+    .btn2 {
+        padding: 1.8vw;
+        font-size: 4vw;
+
+        border: 0.7vw solid white;
+        border-radius: 4vw;
+        width: 80vw;
+
+
+    }
+
+
+
+
+    .aurthor {
+        font-size: 4.5vw;
+
+
+    }
+
+    .page3 {
+        height: 85vh;
+
+
+    }
+
+}
+
+
+@media only screen and (min-width:2560px) {
+
+    .projection,
+    li {
+
+        font-size: 1.7vw;
+
+    }
+
+    li:hover {
+        color: #6CC091;
+        cursor: pointer;
+    }
+
+    .list {
+
+        width: 23vw;
+
+    }
+
+    h1 {
+        font-size: 4.5vw;
+
+
+    }
+
+    .car,
+    .bug,
+    .camera {
+        font-size: 4.3vw;
+    }
+
+
+
+    h3,
+    #random {
+        font-size: 2vw;
+
+    }
+
+    .btn {
+        padding: 1.3vw;
+        font-size: 1.6vw;
+        border: 0.3vw solid #6CC091;
+        border-radius: 1.7vw;
+        width: 20vw;
+
+    }
+
+    .iphone,
+    .cameras {
+        border-radius: 50%;
+        width: 16vw;
+
+    }
+
+    #iphone-div-text {
+        font-size: 2.1vw;
+        width: 18vw;
+
+    }
+
+    .iphone-div-text2 {
+        font-size: 1.7vw;
+        width: 45vw;
+        line-height: 1.8;
+    }
+
+
+    .camera-div-text {
+        font-size: 2.1vw;
+        width: 18vw;
+        line-height: 1.8;
+    }
+
+    .camera-div-text2 {
+        font-size: 1.7vw;
+        width: 45vw;
+        line-height: 1.8;
+
+    }
+
+    .learn-more {
+        padding: 1.3vw;
+        font-size: 1.5vw;
+        border: 0.3vw solid #6CC091;
+        width: 16vw;
+
+    }
+
+    .get {
+        font-size: 3.5vw;
+
+    }
+
+    input {
+        height: 5vw;
+        color: #fff;
+        border-radius: 1.3vw;
+        border: solid 7px #8dcca9;
+        font-size: 2vw;
+        width: 40vw;
+    }
+
+    textarea {
+        color: #fff;
+        height: 25vw;
+        width: 90vw;
+        padding: 1vw;
+        font-size: 2vw;
+        border: solid 7px #8dcca9;
+        border-radius: 1.3vw;
+
+    }
+
+    input:focus {
+        border: solid 6px #4BAE77;
+    }
+
+    textarea:focus {
+        border: solid 6px #4BAE77;
+    }
+
+    .btn2 {
+        padding: 1.3vw;
+        font-size: 1.6vw;
+        border: 0.3vw solid white;
+        border-radius: 1.7vw;
+        width: 19vw;
+        letter-spacing: 3px;
+
+
+    }
+
+
+
+    .aurthor {
+        font-size: 2vw;
+    }
+}
