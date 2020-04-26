@@ -424,7 +424,146 @@ textarea:focus {
 }
 
 
+@media only screen and (max-width:2500px) {
 
+    .projection,
+    li {
+
+        font-size: 1.7vw;
+
+    }
+
+    li:hover {
+        color: #6CC091;
+        cursor: pointer;
+    }
+
+    .list {
+
+        width: 23vw;
+
+    }
+
+    h1 {
+        font-size: 4.5vw;
+
+
+    }
+
+    .car,
+    .bug,
+    .camera {
+        font-size: 4.3vw;
+    }
+
+
+
+    h3,
+    #random {
+        font-size: 2vw;
+
+    }
+
+    .btn {
+        padding: 1.3vw;
+        font-size: 1.6vw;
+        border: 0.3vw solid #6CC091;
+        border-radius: 1.7vw;
+        width: 20vw;
+
+    }
+
+    .iphone,
+    .cameras {
+        border-radius: 50%;
+        width: 16vw;
+
+    }
+
+    #iphone-div-text {
+        font-size: 2.1vw;
+        width: 18vw;
+
+    }
+
+    .iphone-div-text2 {
+        font-size: 1.7vw;
+        width: 45vw;
+        line-height: 1.8;
+    }
+
+
+    .camera-div-text {
+        font-size: 2.1vw;
+        width: 18vw;
+        line-height: 1.8;
+    }
+
+    .camera-div-text2 {
+        font-size: 1.7vw;
+        width: 45vw;
+        line-height: 1.8;
+
+    }
+
+    .learn-more {
+        padding: 1.3vw;
+        font-size: 1.5vw;
+        border: 0.3vw solid #6CC091;
+        width: 16vw;
+
+    }
+
+    .get {
+        font-size: 3.5vw;
+
+    }
+
+    input {
+        height: 5vw;
+        color: #fff;
+        border-radius: 1.3vw;
+        border: solid 7px #8dcca9;
+        font-size: 2vw;
+        width: 40vw;
+    }
+
+    textarea {
+        color: #fff;
+        height: 25vw;
+        width: 90vw;
+        padding: 1vw;
+        font-size: 2vw;
+        border: solid 7px #8dcca9;
+        border-radius: 1.3vw;
+
+    }
+
+    input:focus {
+        border: solid 6px #4BAE77;
+    }
+
+    textarea:focus {
+        border: solid 6px #4BAE77;
+    }
+
+    .btn2 {
+        padding: 1.3vw;
+        font-size: 1.6vw;
+        border: 0.3vw solid white;
+        border-radius: 1.7vw;
+        width: 19vw;
+        letter-spacing: 3px;
+
+
+    }
+
+
+
+    .aurthor {
+        font-size: 2vw;
+    }
+}
 
 
 @media only screen and (max-width:768px) {
@@ -578,6 +717,8 @@ textarea:focus {
 
 }
 
+
+
 @media only screen and (max-width:468px) {
 
     header {
@@ -599,7 +740,7 @@ textarea:focus {
 
     }
 
-    li {
+    .list li {
         font-size: 3.3vw;
     }
 
@@ -860,144 +1001,3 @@ textarea:focus {
 
 }
 
-
-@media only screen and (min-width:2560px) {
-
-    .projection,
-    li {
-
-        font-size: 1.7vw;
-
-    }
-
-    li:hover {
-        color: #6CC091;
-        cursor: pointer;
-    }
-
-    .list {
-
-        width: 23vw;
-
-    }
-
-    h1 {
-        font-size: 4.5vw;
-
-
-    }
-
-    .car,
-    .bug,
-    .camera {
-        font-size: 4.3vw;
-    }
-
-
-
-    h3,
-    #random {
-        font-size: 2vw;
-
-    }
-
-    .btn {
-        padding: 1.3vw;
-        font-size: 1.6vw;
-        border: 0.3vw solid #6CC091;
-        border-radius: 1.7vw;
-        width: 20vw;
-
-    }
-
-    .iphone,
-    .cameras {
-        border-radius: 50%;
-        width: 16vw;
-
-    }
-
-    #iphone-div-text {
-        font-size: 2.1vw;
-        width: 18vw;
-
-    }
-
-    .iphone-div-text2 {
-        font-size: 1.7vw;
-        width: 45vw;
-        line-height: 1.8;
-    }
-
-
-    .camera-div-text {
-        font-size: 2.1vw;
-        width: 18vw;
-        line-height: 1.8;
-    }
-
-    .camera-div-text2 {
-        font-size: 1.7vw;
-        width: 45vw;
-        line-height: 1.8;
-
-    }
-
-    .learn-more {
-        padding: 1.3vw;
-        font-size: 1.5vw;
-        border: 0.3vw solid #6CC091;
-        width: 16vw;
-
-    }
-
-    .get {
-        font-size: 3.5vw;
-
-    }
-
-    input {
-        height: 5vw;
-        color: #fff;
-        border-radius: 1.3vw;
-        border: solid 7px #8dcca9;
-        font-size: 2vw;
-        width: 40vw;
-    }
-
-    textarea {
-        color: #fff;
-        height: 25vw;
-        width: 90vw;
-        padding: 1vw;
-        font-size: 2vw;
-        border: solid 7px #8dcca9;
-        border-radius: 1.3vw;
-
-    }
-
-    input:focus {
-        border: solid 6px #4BAE77;
-    }
-
-    textarea:focus {
-        border: solid 6px #4BAE77;
-    }
-
-    .btn2 {
-        padding: 1.3vw;
-        font-size: 1.6vw;
-        border: 0.3vw solid white;
-        border-radius: 1.7vw;
-        width: 19vw;
-        letter-spacing: 3px;
-
-
-    }
-
-
-
-    .aurthor {
-        font-size: 2vw;
-    }
-}
